@@ -18,15 +18,15 @@ rollbar.log('Hello world!')
 
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname, '../assessment-qa-devops/public/index.html'))
+    res.sendFile(path.join(__dirname, 'public/index.html'))
 });
 
 app.get('/styles', (req,res)=> {
-    res.sendFile(path.join(__dirname, '../assessment-qa-devops/public/index.css'))
+    res.sendFile(path.join(__dirname, 'public/index.css'))
 });
 
 app.get('/js', (req,res)=> {
-    res.sendFile(path.join(__dirname, '../assessment-qa-devops/public/index.js'))
+    res.sendFile(path.join(__dirname, 'public/index.js'))
 });
 
 app.get('/api/robots', (req, res) => {
